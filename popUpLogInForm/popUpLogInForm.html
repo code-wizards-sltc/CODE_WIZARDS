@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/popUpLogInForm.css">
+    <body>
+
+      <button class="open-button" onclick="openForm()">Log In</button>
+
+
+      
+        <div class="popUpLogInForm animate" id="myForm" >
+            <form class="formContainer">
+              
+
+              <div class="upperPart">
+              <div class="title">
+                <h1>Login</h1>
+              </div>
+              <button type="submit" class="btnCancel animate" onclick="closeForm()">X</button>
+              </div>
+              <br>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              
+            </form>
+          </div>
+
+
+
+        
+        <script src="js/popUpLogInForm.js" async defer></script>
+    </body>
+</html>

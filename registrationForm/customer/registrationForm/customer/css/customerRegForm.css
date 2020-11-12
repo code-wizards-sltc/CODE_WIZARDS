@@ -1,0 +1,227 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+* {margin: 0; padding: 0;}
+
+
+
+
+html {
+	height: 100%;
+	background: 
+		linear-gradient(rgb(150, 3, 3), rgb(19, 1, 1));
+}
+
+
+
+
+
+body {
+	font-family: montserrat, arial, verdana;
+}
+
+
+
+
+
+
+.logoLion{
+	float:left;
+	position: relative;
+	padding-left: 7px;
+	padding-top: 3px;
+
+}
+
+
+
+
+
+
+
+.menuBar{
+	background-color: #660000;
+	text-align: left;
+	padding-left: 0%;
+	padding-bottom: 5px;
+	
+}
+
+.menuBar ul{
+	display: inline-flex;
+	list-style: none;
+	color: antiquewhite;
+	padding-left: 5px;
+	
+}
+
+.menuBar ul li{	
+	margin: 1px;
+	padding: 10px;
+	text-align: left;
+}
+
+.menuBar ul li a{
+	text-decoration: none;
+	color: antiquewhite;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+.menuBar ul li:hover{
+	background: #cc0000;
+	border-radius: 3px;		
+}
+
+
+
+
+
+
+
+
+
+.signInBtn {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	background-color: #660000;
+	color: white;
+	padding: 10px;
+	font-size: 18px;
+	border: none;
+	cursor: pointer;		
+  }
+  
+  .signIn {
+	position: relative;
+	display: block;
+	padding-right: 3px;
+	padding-top: 0.15%;
+	float: right;
+  }
+  
+  .signIn:hover .signInBtn {
+	background-color: #bb0000;
+  }
+
+
+
+
+
+
+
+
+.topicName {
+	color: #fff;
+	text-align: center;
+	padding-top: 5%;
+
+}
+
+
+
+
+
+
+
+
+
+#customerRegForm {
+	width: 400px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+	padding-top: 2%;
+}
+#customerRegForm fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	position: relative;
+}
+#customerRegForm fieldset:not(:first-of-type) {
+	display: none;
+}
+#customerRegForm input, #customerRegForm textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+#customerRegForm .action-button {
+	width: 100px;
+	background: #8f0000;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#customerRegForm .action-button:hover, #customerRegForm .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #000000;
+}
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+#stepBar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	counter-reset: step;
+}
+#stepBar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 49.33%;
+	float: left;
+	position: relative;
+}
+#stepBar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+#stepBar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; 
+}
+#stepBar li:first-child:after {
+	content: none; 
+}
+#stepBar li.active:before,  #stepBar li.active:after{
+	background: #000000;
+	color: white;
+}
+
+
